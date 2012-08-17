@@ -43,6 +43,13 @@
             <name>Trance Code Snapshot Repo</name>
             <url>http://maven.trancecode.org/snapshots/</url>
         </repository>
+
+        <repository>
+            <id>project.local</id>
+            <name>project</name>
+            <url>file:${project.basedir}/repo</url>
+        </repository>
+
     </repositories>
 
     <dependencies>
@@ -64,6 +71,13 @@
             <version>0.9.38</version>
 	    <!-- <version>1.0.2-94</version> -->
         </dependency>
+
+        <dependency>
+            <groupId>com.drew</groupId>
+            <artifactId>metadataextractor</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
 
         <dependency>
             <groupId>net.sf.saxon</groupId>

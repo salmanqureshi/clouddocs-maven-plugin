@@ -159,8 +159,8 @@
 <implementation type="cx:pretty-print"
 		class-name="com.xmlcalabash.extensions.PrettyPrint"/>
 
-<implementation type="cx:metadata-extractor"
-		class-name="com.xmlcalabash.extensions.MetadataExtractor"/>
+<!--implementation type="cx:metadata-extractor"
+		class-name="com.xmlcalabash.extensions.MetadataExtractor"/-->
 
 <implementation type="cx:namespace-delete"
 		class-name="com.xmlcalabash.extensions.NamespaceDelete"/>
@@ -258,5 +258,9 @@
 <!-- Rackspace Extensions -->
 <implementation type="cx:replace-text"
 	class-name="com.rackspace.cloud.api.docs.ReplaceTextXProcStep" />
+
+
+<implementation type="cx:metadata-extractor"
+         class-name="com.rackspace.cloud.api.docs.RackspaceMetadataExtractor"/>
 
 </xproc-config>
